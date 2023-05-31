@@ -13,6 +13,8 @@
 		B82CD8072A24F3D4005D6D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82CD8052A24F3D4005D6D10 /* Main.storyboard */; };
 		B82CD8092A24F3D6005D6D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82CD8082A24F3D6005D6D10 /* Assets.xcassets */; };
 		B82CD80C2A24F3D6005D6D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82CD80A2A24F3D6005D6D10 /* LaunchScreen.storyboard */; };
+		B82CD8142A24F449005D6D10 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CD8132A24F449005D6D10 /* CustomTabBar.swift */; };
+		B82CD8162A24F46A005D6D10 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CD8152A24F46A005D6D10 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B82CD8082A24F3D6005D6D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B82CD80B2A24F3D6005D6D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B82CD80D2A24F3D7005D6D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B82CD8132A24F449005D6D10 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		B82CD8152A24F46A005D6D10 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,22 @@
 				B82CD7FF2A24F3D4005D6D10 /* AppDelegate.swift */,
 				B82CD8012A24F3D4005D6D10 /* SceneDelegate.swift */,
 				B82CD8032A24F3D4005D6D10 /* ViewController.swift */,
+				B82CD8172A26F202005D6D10 /* Tabbar */,
 				B82CD8052A24F3D4005D6D10 /* Main.storyboard */,
 				B82CD8082A24F3D6005D6D10 /* Assets.xcassets */,
 				B82CD80A2A24F3D6005D6D10 /* LaunchScreen.storyboard */,
 				B82CD80D2A24F3D7005D6D10 /* Info.plist */,
 			);
 			path = Listed;
+			sourceTree = "<group>";
+		};
+		B82CD8172A26F202005D6D10 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				B82CD8152A24F46A005D6D10 /* CustomTabBarController.swift */,
+				B82CD8132A24F449005D6D10 /* CustomTabBar.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82CD8142A24F449005D6D10 /* CustomTabBar.swift in Sources */,
 				B82CD8042A24F3D4005D6D10 /* ViewController.swift in Sources */,
+				B82CD8162A24F46A005D6D10 /* CustomTabBarController.swift in Sources */,
 				B82CD8002A24F3D4005D6D10 /* AppDelegate.swift in Sources */,
 				B82CD8022A24F3D4005D6D10 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,6 +311,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +340,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
